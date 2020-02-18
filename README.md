@@ -1,6 +1,6 @@
 # DNSEntry Module
 
-[![HitCount](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry.svg)](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry) || [![Status](https://img.shields.io/badge/Status-Development-yellow?style=plastic)] || [![GitHub issues](https://img.shields.io/github/issues/chaozmc/CMc-DNSEntry?style=plastic)](https://github.com/chaozmc/CMc-DNSEntry/issues) || [![GitHub license](https://img.shields.io/github/license/chaozmc/CMc-DNSEntry?style=plastic)](https://github.com/chaozmc/CMc-DNSEntry/blob/master/LICENSE) || [![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Check%20this%20out:&url=https%3A%2F%2Fgithub.com%2Fchaozmc%2FCMc-DNSEntry)
+[![HitCount](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry.svg)](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry) || [![Status](https://img.shields.io/badge/status-Development-yellow?style=plastic)] || [![GitHub issues](https://img.shields.io/github/issues/chaozmc/CMc-DNSEntry?style=plastic)](https://github.com/chaozmc/CMc-DNSEntry/issues) || [![GitHub license](https://img.shields.io/github/license/chaozmc/CMc-DNSEntry?style=plastic)](https://github.com/chaozmc/CMc-DNSEntry/blob/master/LICENSE) || [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fchaozmc%2FCMc-DNSEntry)](https://twitter.com/intent/tweet?text=Check%20this%20out:&url=https%3A%2F%2Fgithub.com%2Fchaozmc%2FCMc-DNSEntry)
 
 A small powershell module for making day-to-day changes in a Microsoft DNS server landscape more convinient
 
