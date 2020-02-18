@@ -60,6 +60,8 @@ Reverts a previous made change to the DNS server
 
 ``` Powershell
 Undo-DNSEntry [-BackupFile] <String> [<CommonParameters>]
+Undo-DNSEntry -BackupFileSet (Get-ChildItem -Path C:\Temp -Filter "*.xml") [<CommonParameters>]
+Get-ChildItem -Path C:\Temp -Filter "*.xml" | Undo-DNSEntry
 ```
 
 ## 3. <a name='Requirements'></a>Requirements
