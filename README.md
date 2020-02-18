@@ -1,5 +1,7 @@
 # DNSEntry Module
 
+[![HitCount](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry.svg)](http://hits.dwyl.com/chaozmc/chaozmc/CMc-DNSEntry) || [![Status](https://img.shields.io/badge/Status-Development-yellow)]
+
 A small powershell module for making day-to-day changes in a Microsoft DNS server landscape more convinient
 
 ## TOC
