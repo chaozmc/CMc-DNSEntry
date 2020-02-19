@@ -13,8 +13,10 @@ A small powershell module for making day-to-day changes in a Microsoft DNS serve
   * 2.1.1 [Add-DNSEntry Syntax](#Add-DNSEntrySyntax)
     * 2.2 [Set-DNSEntry](#Set-DNSEntry)
       * 2.2.1 [Set-DNSEntry Syntax](#Set-DNSEntrySyntax)
-    * 2.3 [Undo-DNSEntry](#Undo-DNSEntry)
-      * 2.3.1 [Undo-DNSEntry Syntax](#Undo-DNSEntrySyntax)
+    * 2.3 [Remove-DNSEntry](#Set-DNSEntry)
+      * 2.3.1 [Remove-DNSEntry Syntax](#Set-DNSEntrySyntax)
+    * 2.4 [Undo-DNSEntry](#Undo-DNSEntry)
+      * 2.4.1 [Undo-DNSEntry Syntax](#Undo-DNSEntrySyntax)
 * **3.** [Requirements](#Requirements)
 
 <!-- vscode-markdown-toc-config
@@ -52,17 +54,29 @@ Sets the value of the specified dns record to a new value
 Set-DNSEntry [-RecordType] <String> [-DNSRecord] <String> [-NewValue] <String> [-TargetZone] <String> [-TargetDNSServer] <String> [-BackupDir] <String> [<CommonParameters>]
 ```
 
-### 2.3. <a name='Undo-DNSEntry'></a>Undo-DNSEntry
+### 2.3 <a name='Remove-DNSEntry'></a>Remove-DNSEntry
+
+Removes a specific DNS record in a specified zone on a specified dns server
+
+#### 2.3.1. <a name='Remove-DNSEntry'></a>Remove-DNSEntry Syntax
+
+``` Powershell
+Remove-DNSEntry [-RecordType] <String> [-DNSRecord] <String> [-TargetZone] <String> [-TargetDNSServer] <String> [-BackupDir] <String> [<CommonParameters>]
+```
+
+### 2.4. <a name='Undo-DNSEntry'></a>Undo-DNSEntry
 
 Reverts a previous made change to the DNS server
 
-#### 2.3.1. <a name='Undo-DNSEntrySyntax'></a>Undo-DNSEntry Syntax
+#### 2.4.1. <a name='Undo-DNSEntrySyntax'></a>Undo-DNSEntry Syntax
 
 ``` Powershell
 Undo-DNSEntry [-BackupFile] <String> [<CommonParameters>]
 Undo-DNSEntry -BackupFileSet (Get-ChildItem -Path C:\Temp -Filter "*.xml") [<CommonParameters>]
 Get-ChildItem -Path C:\Temp -Filter "*.xml" | Undo-DNSEntry
 ```
+
+
 
 ## 3. <a name='Requirements'></a>Requirements
 
