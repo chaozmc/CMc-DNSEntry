@@ -424,8 +424,8 @@ function Remove-DNSEntry {
         DNSZone=$TargetZoneObject.ZoneName
         DNSServer=$TargetDNSServer
     }
-    $backupObject | Export-Clixml -Path "$($BackupDir)$($DNSRecord.HostName).$($TargetZoneObject.ZoneName)-Backup-$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").xml"
-    Write-Verbose -Message "Saved Backpfile to $($BackupDir)$($DNSRecord.HostName).$($TargetZoneObject.ZoneName)-Backup-$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").xml"
+    $backupObject | Export-Clixml -Path "$($BackupDir)$($objectToDelete.HostName).$($TargetZoneObject.ZoneName)-Backup-$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").xml"
+    Write-Verbose -Message "Saved Backpfile to $($BackupDir)$($objectToDelete.HostName).$($TargetZoneObject.ZoneName)-Backup-$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").xml"
 
 }
 
