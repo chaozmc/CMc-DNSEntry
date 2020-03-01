@@ -16,13 +16,7 @@
 
     PowerShellVersion = '3.0'
 
-    RequiredModules = @(
-        @{
-            ModuleName = "DnsServer";
-            ModuleVersion = "2.0.0.0";
-            Guid = "46f598e5-9907-42b2-afbb-68e5f7e34604"
-        }
-    )
+    ExternalModuleDependencies = @('DnsServer')
 
     FunctionsToExport = '*'
 
