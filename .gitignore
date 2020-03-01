@@ -1,0 +1,2 @@
+# Prevent Publish-File with APIKey from unintentional pushing to github
+Publish-MyModule.ps1
