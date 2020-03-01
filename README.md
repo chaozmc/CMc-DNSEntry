@@ -87,3 +87,11 @@ Get-WindowsCapability -Online -Name Rsat.Dns.Tools* | Add-WindowsCapability -Onl
 ```
 
 Further it's required (for sure) to have the permissions on the target DNS server and to run in an elevated shell, otherwise PS doesn't allow to load and use the RSAT commands.
+
+## 4. <a name='Setup'></a>Setup
+
+This module is also available in the Powershellgallery, so you can simply install it via commandline. 
+
+``` Powershell
+Install-Module CMc-DNSEntry
+```
