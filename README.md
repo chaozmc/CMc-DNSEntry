@@ -18,6 +18,7 @@ A small powershell module for making day-to-day changes in a Microsoft DNS serve
     * 2.4 [Undo-DNSEntry](#Undo-DNSEntry)
       * 2.4.1 [Undo-DNSEntry Syntax](#Undo-DNSEntrySyntax)
 * **3.** [Requirements](#Requirements)
+* **4.** [Setup](#Setup)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
