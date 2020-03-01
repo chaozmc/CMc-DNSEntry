@@ -95,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = 'DNS Record','DNS Server','DNS Entry','DNS Administration'
+        Tags = 'DNSRecord','DNSServer','DNSEntry','DNS-Administration','DNS'
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/chaozmc/CMc-DNSEntry/blob/master/LICENSE'
