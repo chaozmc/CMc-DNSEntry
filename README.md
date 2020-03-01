@@ -18,6 +18,7 @@ A small powershell module for making day-to-day changes in a Microsoft DNS serve
     * 2.4 [Undo-DNSEntry](#Undo-DNSEntry)
       * 2.4.1 [Undo-DNSEntry Syntax](#Undo-DNSEntrySyntax)
 * **3.** [Requirements](#Requirements)
+* **4.** [Setup](#Setup)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -87,3 +88,11 @@ Get-WindowsCapability -Online -Name Rsat.Dns.Tools* | Add-WindowsCapability -Onl
 ```
 
 Further it's required (for sure) to have the permissions on the target DNS server and to run in an elevated shell, otherwise PS doesn't allow to load and use the RSAT commands.
+
+## 4. <a name='Setup'></a>Setup
+
+This module is also available in the Powershellgallery, so you can simply install it via commandline. 
+
+``` Powershell
+Install-Module CMc-DNSEntry
+```
