@@ -20,6 +20,7 @@ function New-DNSRequest {
         [string]$Requestor,
         
         #Path to the CoreRequest.dll File
+        [Parameter(Mandatory)]
         [string]$PathToClassDLL,
 
         #Path to the WorkingDirectory. There the Request will be saved
@@ -29,20 +30,6 @@ function New-DNSRequest {
     )
 
     begin {
-        if ( $PathToClassDLL -eq $null ) {
-            if ( Test-Path -Path (Join-Path $PSScriptRoot -ChildPath "CoreRequest.dll")) {
-                $PSScriptRoot = Join-Path $PSScriptRoot -ChildPath "CoreRequest.dll"
-            }
-
-            if ( Test-Path -Path (Join-Path $PSScriptRoot -ChildPath "..\CoreRequest.dll")) {
-                $PSScriptRoot = Join-Path $PSScriptRoot -ChildPath "..\CoreRequest.dll"
-            }
-
-            if ( Test-Path -Path (Join-Path $PSScriptRoot -ChildPath "..\includes\CoreRequest.dll")) {
-                $PSScriptRoot = Join-Path $PSScriptRoot -ChildPath "..\includes\CoreRequest.dll"
-            }
-
-        }
         if (-not (Test-Path -Path $PathToClassDLL) ) {
             Write-Error -Message "Unable to find DLL-File Path($($PathToClassDLL)). Error was: $_" -ErrorAction Stop
         }
